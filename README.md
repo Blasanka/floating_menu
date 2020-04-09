@@ -6,16 +6,16 @@ Check the demo app in example directory.
 
 Right Vertical Straight Floating Menu
 
-<img src="screenshots/img1.png" alt="vertical floating menu" />
+<img src="https://github.com/Blasanka/floating_menu/blob/master/screenshots/img1.png" alt="vertical floating menu" />
 
 Right to Left Horizontal Straight Floating Menu
 
-<img src="screenshots/img2.png" alt="horizontal floating menu" />
+<img src="https://github.com/Blasanka/floating_menu/blob/master/screenshots/img2.png" alt="horizontal floating menu" />
 
 Right Curved Circular Floating Menu
 
-<img src="screenshots/img3.png" alt="circular curved floating menu" />
+<img src="https://github.com/Blasanka/floating_menu/blob/master/screenshots/img3.png" alt="circular curved floating menu" />
 
 Right to Left Curvy Floating Menu
 
-<img src="screenshots/img4.png" alt="curved floating menu" />
+<img src="https://github.com/Blasanka/floating_menu/blob/master/screenshots/img4.png" alt="curved floating menu" />
