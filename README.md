@@ -6,16 +6,16 @@ Check the demo app in example directory.
 
 Right Vertical Straight Floating Menu
 
-<img src="screenshots/img1.jpg" alt="vertical floating menu" />
+<img src="screenshots/img1.png" alt="vertical floating menu" />
 
 Right to Left Horizontal Straight Floating Menu
 
-<img src="screenshots/img2.jpg" alt="horizontal floating menu" />
+<img src="screenshots/img2.png" alt="horizontal floating menu" />
 
 Right Curved Circular Floating Menu
 
-<img src="screenshots/img2.jpg" alt="circular curved floating menu" />
+<img src="screenshots/img2.png" alt="circular curved floating menu" />
 
 Right to Left Curvy Floating Menu
 
-<img src="screenshots/img2.jpg" alt="curved floating menu" />
+<img src="screenshots/img2.png" alt="curved floating menu" />

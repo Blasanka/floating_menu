@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
         floatingButtons: [
           FloatingButtonModel(
             locationDegree: 270,
-            locationDistance: 60,
+            locationDistance: 70,
             shape: BoxShape.circle,
             color: Colors.greenAccent,
             label: "Audio",
