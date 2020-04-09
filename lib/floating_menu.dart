@@ -161,6 +161,8 @@ class ShapeButton extends StatelessWidget {
   }
 }
 
+/// locationDegree: value should be between 0 to 360
+/// locationDistance: how much distance from the main button(type double)
 class FloatingButtonModel {
   final double locationDegree;
   final double locationDistance;

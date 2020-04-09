@@ -14,8 +14,8 @@ Right to Left Horizontal Straight Floating Menu
 
 Right Curved Circular Floating Menu
 
-<img src="screenshots/img2.png" alt="circular curved floating menu" />
+<img src="screenshots/img3.png" alt="circular curved floating menu" />
 
 Right to Left Curvy Floating Menu
 
-<img src="screenshots/img2.png" alt="curved floating menu" />
+<img src="screenshots/img4.png" alt="curved floating menu" />
