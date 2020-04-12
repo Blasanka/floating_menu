@@ -68,8 +68,10 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.greenAccent,
             label: "Audio",
             icon: Icons.audiotrack,
-            size: Size(50, 50),
-            onPress: () {},
+            size: Size(45, 45),
+            onPress: () {
+              print("Audio");
+            },
           ),
           FloatingButtonModel(
             locationDegree: 270,
@@ -78,8 +80,10 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.yellowAccent,
             label: "File",
             icon: Icons.insert_drive_file,
-            size: Size(50, 50),
-            onPress: () {},
+            size: Size(45, 45),
+            onPress: () {
+              print("File");
+            },
           ),
           FloatingButtonModel(
             locationDegree: 270,
@@ -88,8 +92,10 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.purpleAccent,
             label: "Image",
             icon: Icons.image,
-            size: Size(50, 50),
-            onPress: () {},
+            size: Size(45, 45),
+            onPress: () {
+              print("Image");
+            },
           ),
           FloatingButtonModel(
             locationDegree: 270,
@@ -98,8 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.orangeAccent,
             label: "Video",
             icon: Icons.music_video,
-            size: Size(50, 50),
-            onPress: () {},
+            size: Size(45, 45),
+            onPress: () {
+              print("video");
+            },
           ),
         ],
       ),

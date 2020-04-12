@@ -51,65 +51,57 @@ class _FloatingMenuState extends State<FloatingMenu> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
-    Size snSize = MediaQuery.of(context).size;
-    return Container(
-      width: snSize.width,
-      height: snSize.height,
-      child: Stack(
-        children: <Widget>[
-          widget.isMainButton
-            ? Positioned(
-                right: 0,
-                bottom: 0,
-                child: Stack(
-                  children: <Widget>[
-                    for(FloatingButtonModel model in widget.floatingButtons)
-                      Positioned(
-                        right: 6,
-                        child: Transform.translate(
-                          offset: Offset.fromDirection(
-                            getRadians(model.locationDegree),
-                            model.locationDistance * translationAnimation.value,
-                          ),
-                          child: ScaleTransition(
-                            scale: scaleAnimation,
-                            child: ShapeButton(
-                              size: model.size,
-                              color: model.color,
-                              shape: model.shape,
-                              icon: Icon(model.icon, color: Colors.white),
-                              onPress: model.onPress,
-                            ),
-                          ),
-                        ),
-                      ),
-                    Transform(
-                      transform: Matrix4.rotationZ(getRadians(rotationAnimation.value)),
-                      alignment: Alignment.center,
-                      child: ShapeButton(
-                        size: Size(60, 60),
-                        color: widget.mainButtonColor,
-                        shape: widget.mainButtonShape,
-                        icon: Icon(
-                            animationController.isDismissed
-                                ? widget.mainButtonIcon
-                                : Icons.close, color: Colors.white),
-                        onPress: () {
-                          if (animationController.isCompleted) {
-                            animationController.reverse();
-                          } else {
-                            animationController.forward();
-                          }
-                        },
-                      ),
-                    ),
-                  ],
+    return widget.isMainButton ? Stack(
+      children: <Widget>[
+        for(FloatingButtonModel model in widget.floatingButtons)
+          Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: Transform.translate(
+                offset: Offset.fromDirection(
+                  getRadians(model.locationDegree),
+                  model.locationDistance * translationAnimation.value,
                 ),
-              )
-            : SizedBox(),
-        ],
-      ),
-    );
+                child: ScaleTransition(
+                  scale: scaleAnimation,
+                  child: ShapeButton(
+                    size: model.size,
+                    color: model.color,
+                    shape: model.shape,
+                    icon: Icon(model.icon, color: Colors.white),
+                    onPress: model.onPress,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        Align(
+          alignment: Alignment.bottomRight,
+          child: Transform(
+            transform: Matrix4.rotationZ(getRadians(rotationAnimation.value)),
+            alignment: Alignment.center,
+            child: ShapeButton(
+              size: Size(55, 55),
+              color: widget.mainButtonColor,
+              shape: widget.mainButtonShape,
+              icon: Icon(
+                  animationController.isDismissed
+                      ? widget.mainButtonIcon
+                      : Icons.close, color: Colors.white),
+              onPress: () {
+                if (animationController.isCompleted) {
+                  animationController.reverse();
+                } else {
+                  animationController.forward();
+                }
+              },
+            ),
+          ),
+        ),
+      ],
+    )
+            : SizedBox();
   }
 
   double getRadians(double deg) {
@@ -170,7 +162,7 @@ class FloatingButtonModel {
   final IconData icon;
   final Color color;
   final Size size;
-  final VoidCallback onPress;
+  final Function onPress;
   final BoxShape shape;
 
   FloatingButtonModel({
